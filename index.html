@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alexis F. Espinoza Q. - Physics Portfolio</title>
-    <style> 
+    <style>
         /* Reset básico */
         * {
             box-sizing: border-box;
@@ -12,68 +12,72 @@
             padding: 0;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f4f8;
-            color: #222;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 900px;
+            font-family: 'Georgia', serif;
+            background: #f9f9f9;
+            color: #1a1a1a;
+            line-height: 1.75;
+            padding: 30px;
+            max-width: 1000px;
             margin: auto;
         }
         header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         header h1 {
-            font-size: 2.8rem;
-            color: #0a3d62;
-            margin-bottom: 5px;
+            font-size: 2.5rem;
+            color: #0a0a23;
+            margin-bottom: 8px;
+            font-weight: bold;
         }
         header p {
             font-size: 1.1rem;
-            color: #37474f;
+            color: #444;
             font-style: italic;
         }
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 25px;
+            gap: 20px;
             margin-bottom: 40px;
             flex-wrap: wrap;
         }
         nav ul li {
-            background: #0984e3;
-            padding: 12px 18px;
-            border-radius: 6px;
+            background: #1e2a38;
+            padding: 10px 16px;
+            border-radius: 5px;
             transition: background-color 0.3s ease;
         }
         nav ul li:hover {
-            background: #74b9ff;
+            background: #2f3e51;
         }
         nav ul li a {
-            color: white;
+            color: #fff;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
         }
         section {
             margin-bottom: 40px;
         }
         section h2 {
-            color: #0984e3;
+            color: #1e2a38;
             margin-bottom: 15px;
-            border-bottom: 2px solid #0984e3;
-            padding-bottom: 5px;
+            border-bottom: 1px solid #1e2a38;
+            padding-bottom: 6px;
+        }
+        section p, section ul li {
+            font-size: 1.05rem;
         }
         footer {
             text-align: center;
-            color: #555;
+            color: #777;
             font-size: 0.9rem;
-            padding: 15px 0;
+            padding: 20px 0;
             border-top: 1px solid #ccc;
         }
         a.external-link {
-            color: #0984e3;
+            color: #003366;
             font-weight: 600;
             text-decoration: none;
         }
@@ -117,51 +121,48 @@
     </ul>
 </section>
 
-
 <section>
-  <h2>📌 2D Quantum Box – Time-Dependent Schrödinger Equation</h2>
-  <p>This project showcases a numerical simulation of a quantum particle confined in a two-dimensional infinite potential well. The time-dependent Schrödinger equation is solved using the Crank–Nicolson implicit finite difference method.</p>
+    <h2>📌 2D Quantum Box – Time-Dependent Schrödinger Equation</h2>
+    <p>This project showcases a numerical simulation of a quantum particle confined in a two-dimensional infinite potential well. The time-dependent Schrödinger equation is solved using the Crank–Nicolson implicit finite difference method.</p>
 
-  <p>The simulation focuses on the evolution of Gaussian wave packets with varying initial conditions, exploring wave reflection, interference, dispersion, and norm conservation. Each case illustrates unique physical phenomena depending on the packet’s initial momentum, position, direction, and spread.</p>
+    <ul>
+        <li><strong>Presentation (PDF, English):</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/AlexisFEQ_EN NumSimSchrodingeEqTimeDependentMétCrank_Nicolson.pdf" target="_blank">View</a></li>
+        <li><strong>Presentación (PDF, Español):</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/AlexisFEQ_SimNumEcSchrodingeDepTiempoMétCrank_Nicolson.pdf" target="_blank">Ver</a></li>
+        <li><strong>Python Simulation Code:</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/Py Code/AlexisFEQNumSimSchrodingerTimeDependent2DBox.ipynb" target="_blank">View Script</a></li>
+    </ul>
 
-  <p>All simulations, code, and detailed explanations are available below:</p>
-
-  <ul>
-    <li><strong>Presentation (PDF, English):</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/AlexisFEQ_EN NumSimSchrodingeEqTimeDependentMétCrank_Nicolson.pdf" target="_blank">View</a></li>
-    <li><strong>Presentación (PDF, Español):</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/AlexisFEQ_SimNumEcSchrodingeDepTiempoMétCrank_Nicolson.pdf" target="_blank">Ver</a></li>
-    <li><strong>Python Simulation Code:</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/Py Code/AlexisFEQNumSimSchrodingerTimeDependent2DBox.ipynb" target="_blank">View Script</a></li>
-  </ul>
-
-  <h3>🎬 Simulation Videos Playlist</h3>
-  <p>Below is the full playlist of all 10 simulation cases, each corresponding to different initial wave packet parameters. These videos are intended for academic and research purposes.</p>
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=DQzwVHgfCzxOsCVR&amp;list=PLcfvrzGkkRw9lggBvmh21rjhh2LVl2DCL" title="2D Schrödinger Simulation Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-  <p style="margin-top:15px;">For more quantum simulation projects and numerical physics content, visit my Github portfolio:</p>
-  <p><a class="external-link" href="https://github.com/AlexisFEspinozaQ/aespinoza-physics-portfolio.git" target="_blank">https://github.com/AlexisFEspinozaQ/aespinoza-physics-portfolio.git</a></p>
-
-  <p>Feel free to reach out: <a class="external-link" href="mailto:aespinozaquinteros@gmail.com">aespinozaquinteros@gmail.com</a></p>
+    <h3>🎬 Simulation Videos Playlist</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=DQzwVHgfCzxOsCVR&amp;list=PLcfvrzGkkRw9lggBvmh21rjhh2LVl2DCL" frameborder="0" allowfullscreen></iframe>
 </section>
 
-
-    <section>
-  <h2>Quantum particle in a 2D box- Numerical simulation video</h2>
- <iframe width="560" height="315" src="https://www.youtube.com/embed/dMVPxeviQ50?si=rNT7iSy0Rhq9mwgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<section>
+    <h2>Content Coming Soon</h2>
+    <p>The following sections are currently being developed and will be available soon:</p>
+    <ul>
+        <li><strong>Simulations:</strong> This section will feature numerical experiments on classical and quantum systems.</li>
+        <li><strong>Jupyter Notebooks:</strong> Interactive explorations and code demonstrations of key physics concepts.</li>
+        <li><strong>PDF Notes:</strong> Detailed theoretical notes and derivations across topics in physics.</li>
+        <li><strong>Research Reports:</strong> Independent investigations and writeups on advanced topics.</li>
+        <li><strong>Presentations:</strong> Academic presentations summarizing research or theory.</li>
+        <li><strong>Simulation Videos:</strong> Visualizations of dynamic physical systems.</li>
+    </ul>
+    <p>Please check back soon for updates as I continue to expand this portfolio.</p>
 </section>
 
 <section>
     <h2>Contact</h2>
-    <p>If you want to reach out, feel free to contact me at:  
+    <p>If you want to reach out, feel free to contact me at: 
         <a class="external-link" href="mailto:aespinozaquinteros@gmail.com">aespinozaquinteros@gmail.com</a>
     </p>
 </section>
 
 <footer>
-    &copy; 2025 A. Espinoza. All rights reserved.
+    &copy; 2025 Alexis F. Espinoza. All rights reserved.
 </footer>
 
 </body>
 </html>
+
 
 
 
