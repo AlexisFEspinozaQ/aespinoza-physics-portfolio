@@ -6,24 +6,88 @@
   <title>Alexis F. Espinoza Q. - Physics Portfolio</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Georgia', serif; background: #f9f9f9; color: #1a1a1a;
-           line-height: 1.75; padding: 30px; max-width: 1000px; margin: auto; }
-    header { text-align: center; margin-bottom: 40px; }
-    header h1 { font-size: 2.5rem; color: #0a0a23; margin-bottom: 8px; font-weight: bold; }
-    header p { font-size: 1.1rem; color: #444; font-style: italic; }
-    nav ul { list-style: none; display: flex; justify-content: center; gap: 20px;
-             margin-bottom: 40px; flex-wrap: wrap; }
-    nav ul li { background: #1e2a38; padding: 10px 16px; border-radius: 5px;
-                 transition: background-color 0.3s ease; }
-    nav ul li:hover { background: #2f3e51; }
-    nav ul li a { color: #fff; text-decoration: none; font-weight: 500; cursor: pointer; }
-    section { margin-bottom: 40px; }
-    section h2 { color: #1e2a38; margin-bottom: 15px; border-bottom: 1px solid #1e2a38;
-                  padding-bottom: 6px; }
-    section p, section ul li { font-size: 1.05rem; }
-    footer { text-align: center; color: #777; font-size: 0.9rem; padding: 20px 0; border-top: 1px solid #ccc; }
-    a.external-link { color: #003366; font-weight: 600; text-decoration: none; }
-    a.external-link:hover { text-decoration: underline; }
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.75;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2.6rem;
+      color: #0a0a23;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #444;
+      font-style: italic;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      background: #1e2a38;
+      padding: 10px 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li:hover {
+      background: #2f3e51;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    section h2 {
+      color: #1e2a38;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #1e2a38;
+      padding-bottom: 6px;
+    }
+    section p, section ul li {
+      font-size: 1.05rem;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      padding: 20px 0;
+      border-top: 1px solid #ccc;
+    }
+    a.external-link {
+      color: #003366;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a.external-link:hover {
+      text-decoration: underline;
+    }
+    .coming-soon-box {
+      background-color: #f0f0f5;
+      border-left: 6px solid #2f3e51;
+      padding: 15px 20px;
+      border-radius: 5px;
+      font-style: italic;
+      color: #333;
+    }
   </style>
 </head>
 <body>
@@ -35,23 +99,23 @@
 
 <nav>
   <ul>
-    <li><a onclick="scrollToSection('simulations-project')">Simulations</a></li>
-    <li><a onclick="scrollToSection('coming-soon')">Jupyter Notebooks</a></li>
-    <li><a onclick="scrollToSection('coming-soon')">PDF Notes</a></li>
-    <li><a onclick="scrollToSection('coming-soon')">Research Reports</a></li>
-    <li><a onclick="scrollToSection('coming-soon')">Presentations</a></li>
-    <li><a onclick="scrollToSection('coming-soon')">Simulation Videos</a></li>
+    <li><a onclick="scrollToSection('simulations')">Simulations</a></li>
+    <li><a onclick="scrollToSection('notebooks')">Jupyter Notebooks</a></li>
+    <li><a onclick="scrollToSection('pdfnotes')">PDF Notes</a></li>
+    <li><a onclick="scrollToSection('reports')">Research Reports</a></li>
+    <li><a onclick="scrollToSection('presentations')">Presentations</a></li>
+    <li><a onclick="scrollToSection('videos')">Simulation Videos</a></li>
   </ul>
 </nav>
 
-<section id="about">
+<section>
   <h2>About This Portfolio</h2>
   <p>This portfolio gathers my personal and academic work in theoretical physics, including detailed notes,
      numerical simulations, research reports, and visual experiments. The main focus areas include quantum
      mechanics, general relativity, quantum field theory, and mathematical physics.</p>
 </section>
 
-<section id="topics">
+<section>
   <h2>Topics Covered</h2>
   <ul>
     <li>Quantum Mechanics</li>
@@ -59,45 +123,60 @@
     <li>Quantum Field Theory</li>
     <li>Mathematical Physics</li>
     <li>Numerical Simulations</li>
-    <li>Classical Mechanics &amp; Thermodynamics</li>
+    <li>Classical Mechanics & Thermodynamics</li>
   </ul>
 </section>
 
-<section id="simulations-project">
+<section id="simulations">
   <h2>📌 2D Quantum Box – Time‑Dependent Schrödinger Equation</h2>
-  <p>This project showcases a numerical simulation of a quantum particle confined in a two‑dimensional
-     infinite potential well. The time‑dependent Schrödinger equation is solved using the Crank–Nicolson
-     method.</p>
+  <p>This project showcases a numerical simulation of a quantum particle confined in a two‑dimensional infinite potential well. The time‑dependent Schrödinger equation is solved using the Crank–Nicolson implicit finite difference method.</p>
+  <p>The simulation explores wave reflection, interference, dispersion, and norm conservation.</p>
+
   <ul>
-    <li><strong>Presentation (PDF, English):</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/AlexisFEQ_EN_NumSimSchrodingeEqTimeDependentMétCrank_Nicolson.pdf" target="_blank">View</a></li>
+    <li><strong>Presentation (PDF, English):</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/AlexisFEQ_EN NumSimSchrodingeEqTimeDependentMétCrank_Nicolson.pdf" target="_blank">View</a></li>
     <li><strong>Presentación (PDF, Español):</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/AlexisFEQ_SimNumEcSchrodingeDepTiempoMétCrank_Nicolson.pdf" target="_blank">Ver</a></li>
     <li><strong>Python Simulation Code:</strong> <a href="SchrodingerTimeDependent2DQuantumBoxCrankNicolson/Py Code/AlexisFEQNumSimSchrodingerTimeDependent2DBox.ipynb" target="_blank">View Script</a></li>
   </ul>
+
   <h3>🎬 Simulation Videos Playlist</h3>
-  <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/dMVPxeviQ50?si=rNT7iSy0Rhq9mwgU"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+  <p>Playlist with all 10 cases, each with different wave packet parameters:</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=DQzwVHgfCzxOsCVR&amp;list=PLcfvrzGkkRw9lggBvmh21rjhh2LVl2DCL" frameborder="0" allowfullscreen></iframe>
 </section>
 
-<section id="coming-soon">
-  <h2>Content Coming Soon</h2>
-  <p>The following sections are currently under development and will be available soon:</p>
-  <ul>
-    <li><strong>Simulations:</strong> Numerical experiments on classical and quantum systems.</li>
-    <li><strong>Jupyter Notebooks:</strong> Interactive code explorations of physics concepts.</li>
-    <li><strong>PDF Notes:</strong> Detailed theoretical notes and derivations.</li>
-    <li><strong>Research Reports:</strong> Independent investigations on advanced topics.</li>
-    <li><strong>Presentations:</strong> Academic presentations summarizing research or theory.</li>
-    <li><strong>Simulation Videos:</strong> Visualizations of dynamic physical systems.</li>
-  </ul>
-  <p>Please check back soon for updates as I continue to expand this portfolio.</p>
+<section>
+  <h2>Quantum Particle in a 2D Box – Single Case</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dMVPxeviQ50?si=rNT7iSy0Rhq9mwgU" frameborder="0" allowfullscreen></iframe>
 </section>
 
-<section id="contact">
+<section id="notebooks">
+  <h2>Jupyter Notebooks</h2>
+  <div class="coming-soon-box">This section is currently under construction. Relevant interactive notebooks will be uploaded soon.</div>
+</section>
+
+<section id="pdfnotes">
+  <h2>PDF Notes</h2>
+  <div class="coming-soon-box">This section is coming soon. Detailed theoretical notes and derivations will be available here.</div>
+</section>
+
+<section id="reports">
+  <h2>Research Reports</h2>
+  <div class="coming-soon-box">Independent research projects and reports will be published here shortly.</div>
+</section>
+
+<section id="presentations">
+  <h2>Presentations</h2>
+  <div class="coming-soon-box">This section will include academic presentations and summaries. Stay tuned!</div>
+</section>
+
+<section id="videos">
+  <h2>Simulation Videos</h2>
+  <div class="coming-soon-box">Additional video-based simulations will be added to this section soon.</div>
+</section>
+
+<section>
   <h2>Contact</h2>
-  <p>If you want to reach out, feel free to contact me at:
-     <a class="external-link" href="mailto:aespinozaquinteros@gmail.com">aespinozaquinteros@gmail.com</a>
+  <p>If you want to reach out, feel free to contact me at:  
+    <a class="external-link" href="mailto:aespinozaquinteros@gmail.com">aespinozaquinteros@gmail.com</a>
   </p>
 </section>
 
@@ -109,10 +188,11 @@
   function scrollToSection(id) {
     const el = document.getElementById(id);
     if (el) {
-      window.scrollTo({top: el.offsetTop - 20, behavior: 'smooth'});
+      window.scrollTo({ top: el.offsetTop - 20, behavior: 'smooth' });
     }
   }
 </script>
 
 </body>
 </html>
+
