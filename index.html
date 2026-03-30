@@ -158,6 +158,31 @@
     .media-gallery img:hover {
       transform: scale(1.02);
     }
+
+    /* Estilos para incrustar PDFs */
+    .pdf-viewer-container {
+      margin-top: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .pdf-viewer-container iframe {
+      width: 100%;
+      height: 600px; /* Puedes ajustar esta altura */
+      border: none;
+      display: block; /* Elimina espacios en blanco debajo */
+    }
+    
+    /* Para pantallas más pequeñas, quizás quieras un visor más corto */
+    @media (max-width: 768px) {
+      .pdf-viewer-container iframe {
+        height: 400px;
+      }
+    }
+    
     .video-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -217,8 +242,16 @@
     <p>Poster presentation detailing my research work during the summer internship. The poster session took place at the Pontificia Universidad Católica de Chile, San Joaquín campus.</p>
     <p><strong>Event Details:</strong> <a href="https://indico.global/event/17197/" class="external-link" target="_blank">View Indico Event Page</a></p>
     
+    <p><strong>Poster Document (PDF):</strong> <a href="documents/MOPSHUB Alexis Espinoza Poster.pdf" class="external-link" target="_blank">View Full Screen / Download</a></p>
+
+    <div class="pdf-viewer-container">
+       <iframe src="documents/saphir_poster.pdf#view=FitH" title="SAPHIR Internship Poster">
+          <p>It appears your web browser doesn't support inline PDFs. No worries, you can <a href="documents/saphir_poster.pdf">click here to download the PDF file.</a></p>
+       </iframe>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Presentation Photos:</strong></p>
     <div class="media-gallery">
-      <img src="images/saphir_poster.jpg" alt="SAPHIR Internship Poster" />
       <img src="images/saphir_presentacion_1.jpg" alt="Presenting SAPHIR Poster" />
       <img src="images/saphir_presentacion_2.jpg" alt="SAPHIR Poster Session" />
     </div>
@@ -228,8 +261,16 @@
     <h3>📌 University of Chile - Low Dimensional Systems Laboratory</h3>
     <p>Research internship conducted at Faculty of Science Campus, University of Chile. My work focused on instrument control and characterization systems, specifically utilizing LabVIEW for the integration and operation of an Alternating Gradient Force Magnetometer (AGFM) and a lock-in amplifier.</p>
     
+    <p><strong>Poster Document (PDF):</strong> <a href="documents/Póster Alexis Espinoza UChile DFC Final.pdf" class="external-link" target="_blank">View Full Screen / Download</a></p>
+
+    <div class="pdf-viewer-container">
+       <iframe src="documents/uchile_poster.pdf#view=FitH" title="UChile Physics Internship Poster">
+          <p>It appears your web browser doesn't support inline PDFs. No worries, you can <a href="documents/uchile_poster.pdf">click here to download the PDF file.</a></p>
+       </iframe>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Presentation Photos:</strong></p>
     <div class="media-gallery">
-      <img src="images/uchile_poster.jpg" alt="UChile Physics Internship Poster" />
       <img src="images/uchile_presentacion.jpg" alt="Presenting at Beauchef" />
     </div>
   </article>
